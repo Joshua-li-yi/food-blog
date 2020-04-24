@@ -18,13 +18,13 @@
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+        
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="#" data-toggle="tab">Home <span class="sr-only">(current)</span></a>
-                </li> -->
                 <li class="nav-item">
+                    <a class="nav-link" href="#home" data-toggle="tab">home</a>
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link" href="#foodtime" data-toggle="tab">Food Time</a>
                 </li>
                 <!-- <li class="nav-item">
@@ -38,24 +38,26 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <a class="nav-item">
+                    <a class="nav-link" href="/sites/writeblog.html" data-toggle="tab">WriteBlog</a>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item dropdown show">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Me</a>
+                      <div class="dropdown-menu show" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;" x-placement="bottom-start">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">friend</a>
+                        <a class="dropdown-item" href="#">fllow</a>
+                        <a class="dropdown-item" href="#">star</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">logout</a>
+                      </div>
+                    </li>
             </form>
         </div>
 
     </nav>
     <div class="tab-content">
-        <div class="tab-pane jumbotron text-center active" id="startGuid">
-            <h1 class="display-3">Hello, Food Hunter!</h1>
-            <p class="lead">This is a simple guid, follow me you can learn how to start you food share time.</p>
-            <hr class="my-4">
-            <h3>It's begin. Please click the Button Sign up down,if you already sign up plese click the sign in</h3>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="/sites/signup.html" role="button">Sign Up</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="btn btn-primary btn-lg" href="/sites/logIn.html" role="button">Sign In</a>
-            </p>
-        </div>
         <div class="tab-pane" id="refuseSearchPage" style="margin-top: 120px;margin-left: 200px;">
             <h1 class="" id="refuseSearchTitle" style="margin-left: 220px;">Refuse Search</h1>
             <div class="container enter-blockc col-md-7" id="refuseSearch" style="height: 50px;">
@@ -76,7 +78,7 @@
                         <h6 class="card-subtitle text-muted">a sophomore at Nankai University</h6>
                     </div>
                     <img style="height: 400px; width: 100%; display: block;"
-                        src="img/liyi photo.jpg"
+                        src="/img/liyi photo.jpg"
                         alt="Card image">
                     <div class="card-body">
                         <p class="card-text">If you have any question can contact me</p>
@@ -97,6 +99,50 @@
                 </div>
             </div>
         </div>
+        <div class="tab-pane" id="home">
+            <div class="row">
+                <h4 >
+                    id: blog
+                </h4>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="card-header">About</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">developer: Joshua</h5>
+                        <h6 class="card-subtitle text-muted">a sophomore at Nankai University</h6>
+                    </div>
+                    <img style="height: 400px; width: 100%; display: block;"
+                        src="/img/liyi photo.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">If you have any question can contact me</p>
+                    </div>  
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">email: <u>liyinankai1@163.com</u></li>
+                        <li class="list-group-item">qq: <u>1819975371</u></li>
+                        <!-- 在新的页面里跳转 -->
+                        <li class="list-group-item">blog: <a href="https://blog.csdn.net/weixin_44984664" target="_blank">https://blog.csdn.net/weixin_44984664</a> </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://github.com/Joshua-li-yi/food-blog" class="card-link" target="_blank">github</a>
+                        <!-- <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                    <!-- <div class="card-footer text-muted">
+                        2 days ago
+                    </div> -->
+                </div>
+                <div class="card col-md-9">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
 
         <div class="tab-pane" id="foodtime" style="margin-left: 340px;">
             <div class="row">
@@ -111,6 +157,7 @@
                   </div>
             </div>
         </div>
+
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -14,6 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Food Life</a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,23 +38,35 @@
                     <a class="nav-link" href="#about" data-toggle="tab">About</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <a class="nav-item">
-                    <a class="nav-link" href="/sites/writeblog.html" data-toggle="tab">WriteBlog</a>
-                </a>
-                <ul class="nav nav-pills">
-                    <li class="nav-item dropdown show">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Me</a>
-                      <div class="dropdown-menu show" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;" x-placement="bottom-start">
-                        <a class="dropdown-item" href="#">Profile</a>
-                        <a class="dropdown-item" href="#">friend</a>
-                        <a class="dropdown-item" href="#">fllow</a>
-                        <a class="dropdown-item" href="#">star</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">logout</a>
-                      </div>
+            <div class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sites/writeblog.html">WriteBlog</a>
                     </li>
-            </form>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Dropdown</a>
+                        <div class="dropdown-menu" style="">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </li>
+                </ul>
+                <!-- <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul> -->
+            </div>
         </div>
 
     </nav>
